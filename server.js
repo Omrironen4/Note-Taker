@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // Serts up th Express app to handle data parsing 
 app.use(express.urlencoded({ extended: true }));
-app.use(Express.json());
+app.use(express.json());
 
 
 
