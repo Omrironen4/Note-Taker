@@ -7,5 +7,7 @@ module.exports = (app) => {
 
     app.post('/api/notes', (req, res) => {
         console.log(req.body);
+
+        noteInput.push(req.body);
     });
 }
