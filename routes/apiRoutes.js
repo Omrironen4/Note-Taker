@@ -1,4 +1,4 @@
-
+const fs = require('fs');
 let noteInput = require('../db/db.json');
 const uuid = require('uuid').v4;
 
@@ -12,11 +12,16 @@ module.exports = (app) => {
         console.log(req.body);
 
         // makes the database include an id for each object
-        const noteWithId = {...req.body, id: uuid()}
+        const noteWithId = {...req.body, id: uuid()};
 
         // pushes the req.body with id into the db json 
         noteInput.push(noteWithId);
 
+        fs.writeFile(`${noteInput}`, JSON.stringify(noteWithId), (err) => {
+            if (err) throw err;
+        });
+
+        res.json(noteInput);
     });
 
 
