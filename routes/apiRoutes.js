@@ -1,5 +1,5 @@
 const fs = require('fs');
-let noteInput = JSON.parse(fs.readFileSync('../db/db.json', 'utf8'));
+let noteInput = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
 const uuid = require('uuid').v4;
 
 module.exports = (app) => {
