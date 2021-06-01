@@ -24,5 +24,7 @@ module.exports = (app) => {
         res.json(noteInput);
     });
 
+    app.delete()
+
 
 }
