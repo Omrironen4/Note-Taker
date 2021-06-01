@@ -1,8 +1,7 @@
 # Professional Note Taker
 
-- link to deployed website on Heroku:
+Link:
 - https://note-taker-04.herokuapp.com/
-- 
 ## Welcome 
 
 In this application I helped create a note taker using Node.js and Express.js. The front end code was given, while the back-end code was not. This application allows users to add notes, save them, and delete them too if needed. I linked up back-end code to work with the front end and deployed this application on Heroku.
